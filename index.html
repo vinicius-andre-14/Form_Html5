@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </head>
+    <body  id='b'  class= "bg-dark">
+  <nav>
+       <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="modo">
+                    <label class="form-check-label" for="modo"> <i class="bi bi-moon"> </i>                        </label>
+                </div>
+            </nav>  
+  <h1 id='header'  class="text-center text-light"> Cadastro de Usuários</h1>
+<main id='main' class="container bg-light p-3 px-5  rounded mt-3 ">
+  <!-- colocar as propriedades name -->
+  <!-- colocar os métodos no form -->
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Primeiro Nome</label>
+    <input type="text" class="form-control" id="validationCustom01" placeholder="Primeiro Nome"    required>
+    <div class="valid-feedback">
+      Ai que lindo!
+    </div>
+    <div class="invalid-feedback">
+        Digite seu nome.
+      </div>
+  </div>  
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Sobrenome</label>
+    <input type="text" class="form-control" id="validationCustom02" Placeholder="Sobrenome" required>
+    <div class="valid-feedback">
+      Amei!
+    </div>
+    <div class="invalid-feedback">
+        Digite seu sobrenome.
+      </div>
+    
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">CPF</label>
+    <input type="text" class="form-control" id="txtCPF" maxlength="14" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx"    required>
+    <div class="valid-feedback">
+      Não vou lembrar mesmo
+    </div>
+    <div class="invalid-feedback">
+        Digite seu CPF.
+      </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Usuário</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="valid-feedback">
+      sério? KKKKKKKK
+    </div>
+    <div class="invalid-feedback">
+        Por favor escolha um usuário (email).
+      </div>
+      
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Cidade</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="valid-feedback">
+      Fim do mundo ein!
+    </div>
+    <div class="invalid-feedback">
+      Por favor informe sua cidade.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Estado</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Escolha...</option>
+      <option>	 AL	</option>
+      <option>	 AP	</option>
+      <option>	 AM	</option>
+      <option>	 BA	</option>
+      <option>	 CE	</option>
+      <option>	 DF	</option>
+      <option>	 ES	</option>
+      <option>	 GO	</option>
+      <option>	 MA	</option>
+      <option>	 MT	</option>
+      <option>	 MS	</option>
+      <option>	 MG	</option>
+      <option>	 PA	</option>
+      <option>	 PB	</option>
+      <option>	 PR	</option>
+      <option>	 PE	</option>
+      <option>	 PI	</option>
+      <option>	 RJ	</option>
+      <option>	 RN	</option>
+      <option>	 RS	</option>
+      <option>	 RO	</option>
+      <option>	 RR	</option>
+      <option>	 SC	</option>
+      <option>	 SP	</option>
+      <option>	 SE	</option>
+      <option>	 TO	</option>
+    </select>
+    <div class="valid-feedback">
+      Show!
+    </div>
+    <div class="invalid-feedback">
+      Por favor selecione um estado válido.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">CEP</label>
+    <input type="text" class="form-control" id="validationCustom05" placeholder="00000-000" required>
+    <div class="valid-feedback">
+      Ok!
+    </div>
+    <div class="invalid-feedback">
+    Por favor informe um CEP.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+       Concordo com os termos e condições
+      </label>
+      <div class="invalid-feedback">
+        Você precisa concordar antes de enviar.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">enviar</button>
+     <button class="btn btn-warning" type="reset">cancelar</button>
+  </div>
+</form>
+</main>  
+  
+  <script src="js/js.js" type="text/javascript">
+
+  </script>
+    </body>
+</html>
